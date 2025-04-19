@@ -39,7 +39,8 @@ export default function HeroSection() {
               <img 
                 src="/assets/kevin_profile.jpg" 
                 alt="Kevin George" 
-                className="object-cover w-full h-full"
+                className="object-cover w-full h-full scale-150 object-center"
+                style={{ objectPosition: "center center" }}
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
                   console.log("Image failed to load, using fallback");
