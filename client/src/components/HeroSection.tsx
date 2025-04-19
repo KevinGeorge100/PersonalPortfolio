@@ -39,7 +39,7 @@ export default function HeroSection() {
               <img 
                 src="/assets/kevin_profile.jpg" 
                 alt="Kevin George" 
-                className="object-cover w-full h-full scale-150 object-center"
+                className="object-cover w-full h-full scale-110 object-center"
                 style={{ objectPosition: "center center" }}
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
