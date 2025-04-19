@@ -2,8 +2,8 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Mail, Phone, MapPin } from "lucide-react";
-import { FaLinkedinIn, FaTwitter, FaGithub, FaDribbble } from "react-icons/fa";
+import { Mail, GraduationCap } from "lucide-react";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -174,44 +174,28 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="text-gray-300 font-medium mb-1">Email</h4>
-                  <a href="mailto:kevin@example.com" className="text-white hover:text-primary transition-colors">kevin@example.com</a>
+                  <a href="mailto:kevinjosegeorge@ieee.org" className="text-white hover:text-primary transition-colors">kevinjosegeorge@ieee.org</a>
                 </div>
               </div>
               
               <div className="flex items-start">
                 <div className="flex-shrink-0 w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mr-4">
-                  <Phone className="text-primary" />
+                  <GraduationCap className="text-primary" />
                 </div>
                 <div>
-                  <h4 className="text-gray-300 font-medium mb-1">Phone</h4>
-                  <a href="tel:+11234567890" className="text-white hover:text-primary transition-colors">+1 (123) 456-7890</a>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="flex-shrink-0 w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mr-4">
-                  <MapPin className="text-primary" />
-                </div>
-                <div>
-                  <h4 className="text-gray-300 font-medium mb-1">Location</h4>
-                  <p className="text-white">Gujarat, INDIA</p>
+                  <h4 className="text-gray-300 font-medium mb-1">Education</h4>
+                  <p className="text-white">Amal Jyothi College of Engineering</p>
                 </div>
               </div>
               
               <div>
                 <h4 className="text-gray-300 font-medium mb-3">Connect with me</h4>
                 <div className="flex space-x-4">
-                  <a href="#" className="w-10 h-10 bg-dark-light rounded-full flex items-center justify-center text-white hover:bg-primary transition-colors">
+                  <a href="https://www.linkedin.com/in/kwingeorge" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-dark-light rounded-full flex items-center justify-center text-white hover:bg-primary transition-colors">
                     <FaLinkedinIn />
                   </a>
                   <a href="#" className="w-10 h-10 bg-dark-light rounded-full flex items-center justify-center text-white hover:bg-primary transition-colors">
-                    <FaTwitter />
-                  </a>
-                  <a href="#" className="w-10 h-10 bg-dark-light rounded-full flex items-center justify-center text-white hover:bg-primary transition-colors">
                     <FaGithub />
-                  </a>
-                  <a href="#" className="w-10 h-10 bg-dark-light rounded-full flex items-center justify-center text-white hover:bg-primary transition-colors">
-                    <FaDribbble />
                   </a>
                 </div>
               </div>

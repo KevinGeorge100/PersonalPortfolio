@@ -10,7 +10,7 @@ export default function HeroSection() {
             Hi, I'm <span className="text-primary">Kevin George</span>
           </h1>
           <h2 className="text-xl sm:text-2xl font-light mb-6 text-gray-400">
-            Innovator | Strategist | Visionary
+            Engineer | Developer | Problem Solver
           </h2>
           <p className="text-lg mb-8 max-w-xl mx-auto md:mx-0 text-gray-300">
             Turning complex problems into elegant solutions through strategic thinking and innovative approaches.
@@ -37,9 +37,15 @@ export default function HeroSection() {
           <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-primary to-secondary p-1 shadow-lg shadow-primary/20">
             <div className="absolute inset-1 rounded-full overflow-hidden bg-dark-light flex items-center justify-center">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8bWFsZSxwcm9mZXNzaW9uYWwscG9ydHJhaXR8fHx8fHwxNjgxNjA1NjIw&ixlib=rb-4.0.3&q=80&w=400" 
+                src="/assets/kevin_profile.jpg" 
                 alt="Kevin George" 
                 className="object-cover w-full h-full"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  console.log("Image failed to load, using fallback");
+                  target.onerror = null; // prevent infinite loop
+                  target.src = "https://via.placeholder.com/400x400?text=Kevin+George";
+                }}
               />
             </div>
           </div>
